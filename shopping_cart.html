@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flip Stitch Pillow</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="js/todo.js"></script>
+</head>
+
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Our Products</a></li>
+    <li><a href="#">Shopping Cart (<span name="cart_items">3</span>)</a></li>
+  </ul>
+  <h1>Your Shopping Cart</h1>
+  <form>
+    <ul>
+      <li>
+        <img src="./resources/images/home_pillow.jpg" class="starterImage" alt="a picture of couch pillow"></img>
+        <div>Couch Pillow $<span name="couch_pillow_price">19.99</span>
+          Qty: <input type="number" value="2">
+          <button>remove</button>
+        </div>
+        <p>Description: small, square</p>
+      </li>
+      <li>
+        <img src="./resources/images/round_pillow.jpg" class="starterImage" alt="a picture of round pillow"></img>
+        <div>Round Pillow $<span name="round_pillow_price">16.99</span>
+          Qty: <input type="number" name="round_pillow_qty" value="1">
+          <button>remove</button>
+        </div>
+        <p>Description: medium, round</p>
+      </li>
+    </ul>
+    <p>Total: $<span name="total_cost">57.97</span></p>
+    <button type="submit">Proceed to Checkout</button>
+  </form>
+</body>
+</html>

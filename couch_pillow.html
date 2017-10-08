@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flip Stitch Pillow</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script src="js/todo.js"></script>
+</head>
+
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Our Products</a></li>
+    <li><a href="shopping_cart.html">Shopping Cart (<span name="cart_items">0</span>)</a></li>
+  </ul>
+  <h1>Couch Pillow</h1>
+  <img src="./resources/images/home_pillow.jpg" class="starterImage" alt="a picture of couch pillow"></img>
+  <form>
+    <p>Price: $19.99</p>
+    Choose size: <select name="size">
+      <option value="small">small</option>
+      <option value="medium">medium</option>
+      <option value="large">large</option>
+    </select>
+    <br>
+    Choose shape: <select name="shape">
+      <option value="square">square</option>
+      <option value="round">round</option>
+      <option value="dog">dog</option>
+      <option value="bear">bear</option>
+      <option value="bunny">bunny</option>
+      <option value="cat">cat</option>
+      <option value="custom">custom</option>
+    </select>
+    <br>
+    <p>Want a customized pillow? Tell us what kind of custimization you‛d like.</p>
+    <textarea name="custom_message" rows="10" cols="60">Enter your need for customization here.</textarea>
+    <br>
+    <button type="submit">Add to Cart</button>
+  </form>
+</body>
+</html>
