@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="styles/index.css">
 
   <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <script src="scripts/todo.js"></script>
 </head>
 
 <body>
   <ul class="navbar">
     <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
     <li class="navbar-item"><a class="navbar-link" href="products.html">Our Products</a></li>
-    <li class="navbar-item"><a class="navbar-link" href="#">Shopping Cart (<span name="cart_items">3</span>)</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="#">Shopping Cart (<span id="cart_items">3</span>)</a></li>
   </ul>
   <h1>Your Shopping Cart</h1>
   <form>
@@ -23,16 +23,16 @@
       <div class="item">
         <img class="smallImage" src="./resources/images/home_pillow.jpg" alt="a picture of couch pillow"></img>
         <div>Couch Pillow $<span name="couch_pillow_price">19.99</span><br>
-          Qty: <input type="number" value="2">
-          <button class="btn btn-sm">remove</button>
+          Qty: <input type="number" name="item_qty" value="2">
+          <button class="btn btn-sm" type="button" onclick="remove_entry(this)">remove</button>
         </div>
         <p>Description: small, square</p>
       </div>
       <div class="item">
         <img class="smallImage" src="./resources/images/round_pillow.jpg" alt="a picture of round pillow"></img>
         <div>Round Pillow  $<span name="round_pillow_price">16.99</span><br>
-          Qty: <input type="number" name="round_pillow_qty" value="1">
-          <button class="btn btn-sm">remove</button>
+          Qty: <input type="number" name="item_qty" value="1">
+          <button class="btn btn-sm" type="button" onclick="remove_entry(this)">remove</button>
         </div>
         <p>Description: medium, round</p>
       </div>

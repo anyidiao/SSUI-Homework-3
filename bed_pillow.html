@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="styles/index.css">
 
   <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <script src="scripts/todo.js"></script>
 </head>
 
 <body>
   <ul class="navbar">
     <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
     <li class="navbar-item"><a class="navbar-link" href="products.html">Our Products</a></li>
-    <li class="navbar-item"><a class="navbar-link" href="shopping_cart.html">Shopping Cart (<span name="cart_items">0</span>)</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="shopping_cart.html">Shopping Cart (<span id="cart_items">0</span>)</a></li>
   </ul>
   <h1>Bed Pillow</h1>
   <img src="./resources/images/bed_pillow.jpg" class="largeImage" alt="a picture of bed pillow"></img>
@@ -41,8 +41,8 @@
       <p>Want a customized pillow? Tell us what kind of custimization you‛d like.</p>
       <textarea name="custom_message" rows="10" cols="60" placeholder="Enter your need for customization here."></textarea>
       <br>
-      <button class="btn btn-lg" type="submit">Add to Cart</button>
     </form>
+    <button class="btn btn-lg" onclick="add_item()">Add to Cart</button>
   </div>
 </body>
 </html>
