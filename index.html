@@ -7,26 +7,25 @@
   <!--The following line loads in your CSS style sheet-->
   <link rel="stylesheet" href="styles/index.css">
 
-  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
-
   <!--The following line loads in your JS script-->
   <script src="js/todo.js"></script>
 </head>
 
 <body>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="products.html">Our Products</a></li>
-    <li><a href="shopping_cart.html">Shopping Cart (<span name="cart_items">0</span>)</a></li>
+  <ul class="navbar">
+    <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="products.html">Our Products</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="shopping_cart.html">Shopping Cart (<span name="cart_items">0</span>)</a></li>
   </ul>
   <h1>Flip Stitch Pillow</h1>
-  <img src="./resources/images/home_pillow.jpg" class="starterImage" alt="a picture of a box that says what's in store for your store"></img>
-  <p>Tired of dull pillows? We specialize in custom decorative throw pillows. Couch pillows, bed pillow made in cute animal shapes. You can even customized your own pillow!</p>
-  <p>All pillows are handmade in our artisan workshop out of Pittsburgh, PA.</p>
+  <img src="./resources/images/home_pillow.jpg" class="largeImage" alt="a picture of a box that says what's in store for your store"></img>
+  <div class="intro">
+    <p>Tired of dull pillows? We specialize in custom decorative throw pillows. Couch pillows, bed pillow made in cute animal shapes. You can even customized your own pillow!</p>
+    <p>All pillows are handmade in our artisan workshop out of Pittsburgh, PA.</p>
+  </div>
   <div>
-    <span>Want to buy a new pillow?</span>
-    <button href="shopping_cart.html">SHOP NOW</button>
+    <span class="help-text">Want to buy a new pillow? </span>
+    <a href="products.html"><button class="btn btn-lg">SHOP NOW</button></a>
   </div>
 </body>
 </html>
